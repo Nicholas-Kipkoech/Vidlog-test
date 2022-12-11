@@ -8,7 +8,7 @@ function App() {
   const [text, setText] = useState("");
 
   const configuration = new Configuration({
-    apiKey: import.meta.env.VITE_API_KEY,
+    apiKey: "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",
   });
 
   const openai = new OpenAIApi(configuration);
