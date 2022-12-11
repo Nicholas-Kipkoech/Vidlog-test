@@ -8,8 +8,9 @@ function App() {
   const [text, setText] = useState("");
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: import.meta.env.VITE_API_KEY,
   });
+
   const openai = new OpenAIApi(configuration);
 
   const fetchSumamary = async () => {
@@ -22,6 +23,7 @@ function App() {
       frequency_penalty: 0.0,
       presence_penalty: 0.0,
     });
+
     setSummary(response.data.choices[0].text);
   };
 
@@ -33,6 +35,8 @@ function App() {
 
       <div className="summary-area">
         <div className="text-area-div">
+          <p> Text will be entered here</p>
+
           <textarea
             className="text-area"
             value={text}
@@ -41,6 +45,7 @@ function App() {
           ></textarea>
         </div>
         <div className="text-area-div">
+          <p>Summarized text will be displayed here</p>
           <div className="text-area2">{summary}</div>
         </div>
       </div>
