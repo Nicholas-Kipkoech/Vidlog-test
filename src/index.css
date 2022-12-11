@@ -1,0 +1,57 @@
+.App{
+  margin: 10rem;
+}
+.title{
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+ 
+}
+
+.text-area-div{
+  margin:30px;
+}
+
+.text-area{
+  height: 400px;
+  width: 600px;
+}
+.text-area2{
+  height: 400px;
+  width: 600px;
+  border-color: black;
+  border-width: 2;
+  background-color: rgb(226, 29, 200);
+  color:white;
+  font-size: 1rem;
+
+
+}
+.summary-area{
+  display: flex;
+  margin-left: 10rem;
+}
+.btn-summary{
+  margin-left: 15rem;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: brown;
+  color:wheat;
+}
+.btn-summary:hover{
+  margin-left: 15rem;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: rgb(47, 190, 66);
+  color:rgb(255, 255, 255);
+}
+.summarized{
+  height: 400px;
+  width: 600px;
+  box-sizing: border-box;
+  border-color: aqua;
+}
