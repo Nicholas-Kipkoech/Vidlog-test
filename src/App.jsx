@@ -16,7 +16,7 @@ function App() {
   const fetchSumamary = async () => {
     const response = await openai.createCompletion({
       model: "text-davinci-003",
-      prompt: `Summarize this for a second-grade student:\n\n:${text}`,
+      prompt: `Summarize this text:\n\n:${text}`,
       temperature: 0.7,
       max_tokens: 64,
       top_p: 1.0,
